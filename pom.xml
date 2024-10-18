@@ -54,11 +54,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.github.wimdeblauwe</groupId>
-            <artifactId>htmx-spring-boot-thymeleaf</artifactId>
-            <version>3.5.0</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.modulith</groupId>
             <artifactId>spring-modulith-starter-core</artifactId>
         </dependency>
@@ -130,12 +125,92 @@
     <build>
         <plugins>
             <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>src/main/front/node_modules</directory>
+                        </fileset>
+                        <fileset>
+                            <directory>src/main/front/.nuxt</directory>
+                        </fileset>
+                        <fileset>
+                            <directory>src/main/front/.output</directory>
+                        </fileset>
+                        <fileset>
+                            <directory>src/main/front/</directory>
+                            <includes>
+                                <include>dist</include>
+                            </includes>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.graalvm.buildtools</groupId>
                 <artifactId>native-maven-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <version>1.15.1</version>
+                <configuration>
+                    <installDirectory>target/bin</installDirectory>
+                    <workingDirectory>src/main/front</workingDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>install bun runtime</id>
+                        <goals>
+                            <goal>install-bun</goal>
+                        </goals>
+                        <configuration>
+                            <bunVersion>v1.1.31</bunVersion>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>bun install</id>
+                        <goals>
+                            <goal>bun</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>bun build</id>
+                        <goals>
+                            <goal>bun</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>generate</arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.outputDirectory}/static</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/front/dist</directory>
+                                    <filtering>false</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

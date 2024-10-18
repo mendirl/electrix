@@ -17,6 +17,7 @@ target/
 *.iws
 *.iml
 *.ipr
+.fleet
 
 ### NetBeans ###
 /nbproject/private/
@@ -30,3 +31,26 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+
+
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Local env files
+.env
+.env.*
+!.env.example
