@@ -129,16 +129,16 @@
                 <configuration>
                     <filesets>
                         <fileset>
-                            <directory>src/main/front/node_modules</directory>
+                            <directory>src/main/webapp/node_modules</directory>
                         </fileset>
                         <fileset>
-                            <directory>src/main/front/.nuxt</directory>
+                            <directory>src/main/webapp/.nuxt</directory>
                         </fileset>
                         <fileset>
-                            <directory>src/main/front/.output</directory>
+                            <directory>src/main/webapp/.output</directory>
                         </fileset>
                         <fileset>
-                            <directory>src/main/front/</directory>
+                            <directory>src/main/webapp/</directory>
                             <includes>
                                 <include>dist</include>
                             </includes>
@@ -160,7 +160,7 @@
                 <version>1.15.1</version>
                 <configuration>
                     <installDirectory>target/bin</installDirectory>
-                    <workingDirectory>src/main/front</workingDirectory>
+                    <workingDirectory>src/main/webapp</workingDirectory>
                 </configuration>
                 <executions>
                     <execution>
@@ -204,7 +204,7 @@
                             <outputDirectory>${project.build.outputDirectory}/static</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>src/main/front/dist</directory>
+                                    <directory>src/main/webapp/dist</directory>
                                     <filtering>false</filtering>
                                 </resource>
                             </resources>
@@ -213,6 +213,7 @@
                 </executions>
             </plugin>
         </plugins>
+        <defaultGoal>spring-boot:run</defaultGoal>
     </build>
 
 </project>
