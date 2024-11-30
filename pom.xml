@@ -161,6 +161,7 @@
                 <configuration>
                     <installDirectory>target/bin</installDirectory>
                     <workingDirectory>src/main/webapp</workingDirectory>
+                    <skip>true</skip>
                 </configuration>
                 <executions>
                     <execution>
