@@ -186,7 +186,7 @@
                 <configuration>
                     <installDirectory>target/bin</installDirectory>
                     <workingDirectory>src/main/webapp</workingDirectory>
-                    <skip>true</skip>
+<!--                    <skip>true</skip>-->
                 </configuration>
                 <executions>
                     <execution>
@@ -213,7 +213,7 @@
                             <goal>bun</goal>
                         </goals>
                         <configuration>
-                            <arguments>generate</arguments>
+                            <arguments>run build-only</arguments>
                         </configuration>
                     </execution>
                 </executions>
