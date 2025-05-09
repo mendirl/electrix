@@ -1,0 +1,20 @@
+server.port: 9090
+spring:
+  application.name: electrix
+  main.banner-mode: off
+  threads.virtual.enabled: true
+  mvc.problemdetails.enabled: true
+#  jpa.open-in-view: false
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/postgres
+#    username: postgres
+#    password: postgres
+  jooq.sql-dialect: postgres
+
+electrix:
+  path:
+    source:
+
+logging.level:
+  root: info
+  io.mend.electrix: debug
