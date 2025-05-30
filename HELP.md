@@ -117,3 +117,20 @@ parent.
 To prevent this, the project POM contains empty overrides for these elements.
 If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
 
+## FRONT
+
+### Vue.js
+https://vuejs.org/guide/quick-start.html
+```
+cd src/main 
+../../target/bin/bun/bun create vue@latest vue-electrix
+cd vue-electrix
+../../../target/bin/bun/bun install
+```
+### Nuxt
+https://nuxt.com/docs/getting-started/installation
+```
+../../target/bin/bun/bun create nuxt nuxt-electrix
+cd nuxt-electrix
+../../../target/bin/bun/bun install
+```
