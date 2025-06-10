@@ -22,7 +22,7 @@
         "@vue/tsconfig": "^0.7.0",
         "chromedriver": "^135.0.0",
         "eslint": "^9.22.0",
-        "eslint-plugin-oxlint": "^0.16.0",
+        "eslint-plugin-oxlint": "^1.0.0",
         "eslint-plugin-vue": "~10.0.0",
         "geckodriver": "^5.0.0",
         "jiti": "^2.4.2",
@@ -764,7 +764,7 @@
 
     "eslint-config-prettier": ["eslint-config-prettier@10.1.5", "", { "peerDependencies": { "eslint": ">=7.0.0" }, "bin": { "eslint-config-prettier": "bin/cli.js" } }, "sha512-zc1UmCpNltmVY34vuLRV61r1K27sWuX39E+uyUnY8xS2Bex88VV9cugG+UZbRSRGtGyFboj+D8JODyme1plMpw=="],
 
-    "eslint-plugin-oxlint": ["eslint-plugin-oxlint@0.16.12", "", { "dependencies": { "jsonc-parser": "^3.3.1" } }, "sha512-41nSsLHg2oOnl7E/Bb5dypPuIAlMDTobo71+HeRVn1wipC5VXU8GBPVXiwi2RVcnwpEHy3TwEYcatrDMjKd3Sg=="],
+    "eslint-plugin-oxlint": ["eslint-plugin-oxlint@1.0.0", "", { "dependencies": { "jsonc-parser": "^3.3.1" } }, "sha512-j+eziIt4SkM4g+P4i7HgAzK/j0OkA33gN9DpF7/nmvaU5W5HPk8CWVntXySseRHdgqBz6IhAwJunXA+d5x618g=="],
 
     "eslint-plugin-prettier": ["eslint-plugin-prettier@5.4.1", "", { "dependencies": { "prettier-linter-helpers": "^1.0.0", "synckit": "^0.11.7" }, "peerDependencies": { "@types/eslint": ">=8.0.0", "eslint": ">=8.0.0", "eslint-config-prettier": ">= 7.0.0 <10.0.0 || >=10.1.0", "prettier": ">=3.0.0" }, "optionalPeers": ["@types/eslint", "eslint-config-prettier"] }, "sha512-9dF+KuU/Ilkq27A8idRP7N2DH8iUR6qXcjF3FR2wETY21PZdBrIjwCau8oboyGj9b7etWmTGEeM8e7oOed6ZWg=="],
 
