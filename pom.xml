@@ -195,7 +195,7 @@
                             <goal>install-bun</goal>
                         </goals>
                         <configuration>
-                            <bunVersion>v1.2.15</bunVersion>
+                            <bunVersion>v1.2.20</bunVersion>
                         </configuration>
                     </execution>
                     <execution>
