@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.4</version>
+        <version>4.0.0-M2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -34,7 +34,7 @@
 
     <properties>
         <java.version>24</java.version>
-        <spring-modulith.version>1.4.2</spring-modulith.version>
+        <spring-modulith.version>2.0.0-M2</spring-modulith.version>
         <spring-cloud.version>2025.0.0</spring-cloud.version>
     </properties>
 
