@@ -49,7 +49,7 @@
     "oxlint": "~1.8.0",
     "prettier": "3.6.2",
     "ts-node": "^10.9.2",
-    "typescript": "~5.8.0",
+    "typescript": "~5.9.0",
     "vite": "npm:rolldown-vite@latest",
     "vite-plugin-nightwatch": "^0.4.6",
     "vite-plugin-vue-devtools": "^8.0.0",
