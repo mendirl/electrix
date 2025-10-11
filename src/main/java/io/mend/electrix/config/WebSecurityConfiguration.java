@@ -26,20 +26,22 @@ public class WebSecurityConfiguration {
         return http.
 
             authorizeHttpRequests(requests -> requests
-            .requestMatchers(EndpointRequest.toAnyEndpoint())
+                    .requestMatchers(EndpointRequest.toAnyEndpoint())
 //            .hasRole("ENDPOINT_ADMIN")
-                           .permitAll()
-                   )
+                    .permitAll()
+                    .anyRequest().permitAll()
+            )
 //            .httpBasic(withDefaults())
-        .build();
+            .build();
     }
+
     @Bean
     SecurityFilterChain all(HttpSecurity http) throws Exception {
-    return http
-        .authorizeHttpRequests((requests) -> requests
-            .requestMatchers("/**").permitAll()
-        )
-        .build();
+        return http
+            .authorizeHttpRequests((requests) -> requests
+                .requestMatchers("/**").permitAll()
+            )
+            .build();
     }
 
 }

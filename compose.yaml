@@ -5,4 +5,4 @@ services:
       - 'POSTGRES_PASSWORD=electrix'
       - 'POSTGRES_USER=electrix'
     ports:
-      - '5432:5432'
+      - '5431:5432'

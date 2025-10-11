@@ -122,15 +122,12 @@ If you manually switch to a different parent and actually want the inheritance, 
 ### Vue.js
 https://vuejs.org/guide/quick-start.html
 ```
-cd src/main 
-../../target/bin/bun/bun create vue@latest vue-electrix
-cd vue-electrix
-../../../target/bin/bun/bun install
+cd src/main && ../../target/bin/bun/bun create vue@latest vue-electrix
+cd vue-electrix && ../../../target/bin/bun/bun install
 ```
 ### Nuxt
 https://nuxt.com/docs/getting-started/installation
 ```
-../../target/bin/bun/bun create nuxt nuxt-electrix
-cd nuxt-electrix
-../../../target/bin/bun/bun install
+cd src/main && ../../target/bin/bun/bun create nuxt nuxt-electrix
+cd nuxt-electrix && ../../../target/bin/bun/bun install
 ```
