@@ -119,7 +119,7 @@ If you manually switch to a different parent and actually want the inheritance, 
 
 ## FRONT
 
-### Vue.js
+### Vue.js (nightwatch)
 https://vuejs.org/guide/quick-start.html
 ```
 cd src/main && ../../target/bin/bun/bun create vue@latest vue-electrix
