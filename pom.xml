@@ -17,8 +17,9 @@
 
     <properties>
         <java.version>25</java.version>
-        <spring-modulith.version>2.0.0-M3</spring-modulith.version>
-        <spring-cloud.version>2025.1.0-M1</spring-cloud.version>
+        <bun-version>v1.3.2</bun-version>
+        <spring-modulith.version>2.0.0-RC1</spring-modulith.version>
+        <spring-cloud.version>2025.1.0-RC1</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -178,7 +179,7 @@
                             <goal>install-bun</goal>
                         </goals>
                         <configuration>
-                            <bunVersion>v1.2.22</bunVersion>
+                            <bunVersion>${bun-version}</bunVersion>
                         </configuration>
                     </execution>
                     <execution>
