@@ -1,12 +1,11 @@
 package io.mend.electrix.config;
 
-import org.springframework.boot.security.autoconfigure.actuate.servlet.EndpointRequest;
+import org.springframework.boot.security.autoconfigure.actuate.web.servlet.EndpointRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
-
-import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration(proxyBeanMethods = false)
 public class WebSecurityConfiguration {
@@ -22,26 +21,19 @@ public class WebSecurityConfiguration {
 //    }
 
     @Bean
-    public SecurityFilterChain actuator(HttpSecurity http) throws Exception {
-        return http.
-
-            authorizeHttpRequests(requests -> requests
-                    .requestMatchers(EndpointRequest.toAnyEndpoint())
-//            .hasRole("ENDPOINT_ADMIN")
-                    .permitAll()
-                    .anyRequest().permitAll()
-            )
-//            .httpBasic(withDefaults())
-            .build();
+    @Order(1)
+    public SecurityFilterChain actuator(HttpSecurity http) {
+        return http.securityMatcher(EndpointRequest.toAnyEndpoint())
+            .authorizeHttpRequests(authorize -> authorize.anyRequest()
+//                .hasRole("ENDPOINT_ADMIN")
+                .permitAll()
+            ).build();
     }
 
     @Bean
-    SecurityFilterChain all(HttpSecurity http) throws Exception {
-        return http
-            .authorizeHttpRequests((requests) -> requests
-                .requestMatchers("/**").permitAll()
-            )
-            .build();
+    @Order(1)
+    SecurityFilterChain all(HttpSecurity http) {
+        return http.authorizeHttpRequests(authorize -> authorize.requestMatchers("/**").permitAll()).build();
     }
 
 }
