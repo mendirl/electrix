@@ -53,7 +53,7 @@
     "vite": "npm:rolldown-vite@latest",
     "vite-plugin-nightwatch": "^0.4.6",
     "vite-plugin-vue-devtools": "^8.0.3",
-    "vitest": "^3.2.4",
+    "vitest": "^4.0.0",
     "vue-tsc": "^3.1.1"
   }
 }
