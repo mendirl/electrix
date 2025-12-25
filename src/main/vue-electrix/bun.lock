@@ -14,7 +14,7 @@
         "@prettier/plugin-oxc": "^0.1.0",
         "@tsconfig/node24": "^24.0.0",
         "@types/jsdom": "^27.0.0",
-        "@types/node": "^24.0.0",
+        "@types/node": "^25.0.0",
         "@vitejs/plugin-vue": "^6.0.1",
         "@vitejs/plugin-vue-jsx": "^5.1.1",
         "@vitest/eslint-plugin": "^1.3.23",
@@ -452,7 +452,7 @@
 
     "@types/nightwatch": ["@types/nightwatch@2.3.32", "", { "dependencies": { "@types/chai": "*", "@types/node": "*", "@types/selenium-webdriver": "*", "devtools-protocol": "^0.0.1025565" } }, "sha512-RXAWpe83AERF0MbRHXaEJlMQGDtA6BW5sgbn2jO0z04yzbxc4gUvzaJwHpGULBSa2QKUHfBZoLwe/tuQx0PWLg=="],
 
-    "@types/node": ["@types/node@24.10.1", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ=="],
+    "@types/node": ["@types/node@25.0.3", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-W609buLVRVmeW693xKfzHeIV6nJGGz98uCPfeXI1ELMLXVeKYZ9m15fAMSaUPBHYLGFsVRcMmSCksQOrZV9BYA=="],
 
     "@types/selenium-webdriver": ["@types/selenium-webdriver@4.35.3", "", { "dependencies": { "@types/node": "*", "@types/ws": "*" } }, "sha512-V8rEfVHFNsamhflPVqEgP1u8VShsEBAuQoLkIzpjwvPOkfmcNFp+mzJzFBwcIS9S90bxgRN3sp+Us/Mx55MXIA=="],
 
