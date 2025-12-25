@@ -13,7 +13,7 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.{ts,tsx,js,jsx,json,css,scss,sql,ejs,yml,sh}]
+[*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue,css,scss,sass,less,styl,json,sql,ejs,yml,sh}]
 indent_size = 2
 
 [*.md]

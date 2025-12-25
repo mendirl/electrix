@@ -33,7 +33,7 @@ public class ElectrixIntegration {
             .aggregate(new FileAggregator())
             .handle((payload, headers) -> {
                 System.out.println(payload);
-                return null;
+                return "Void";
             })
             .get();
     }
