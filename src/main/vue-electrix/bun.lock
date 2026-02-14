@@ -13,7 +13,7 @@
         "@nightwatch/vue": "^3.1.2",
         "@tsconfig/node24": "^24.0.4",
         "@types/jsdom": "^27.0.0",
-        "@types/node": "^24.10.9",
+        "@types/node": "^25.0.0",
         "@vitejs/plugin-vue": "^6.0.3",
         "@vitejs/plugin-vue-jsx": "^5.1.3",
         "@vitest/eslint-plugin": "^1.6.6",
@@ -383,7 +383,7 @@
 
     "@types/nightwatch": ["@types/nightwatch@2.3.32", "", { "dependencies": { "@types/chai": "*", "@types/node": "*", "@types/selenium-webdriver": "*", "devtools-protocol": "^0.0.1025565" } }, "sha512-RXAWpe83AERF0MbRHXaEJlMQGDtA6BW5sgbn2jO0z04yzbxc4gUvzaJwHpGULBSa2QKUHfBZoLwe/tuQx0PWLg=="],
 
-    "@types/node": ["@types/node@24.10.13", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-oH72nZRfDv9lADUBSo104Aq7gPHpQZc4BTx38r9xf9pg5LfP6EzSyH2n7qFmmxRQXh7YlUXODcYsg6PuTDSxGg=="],
+    "@types/node": ["@types/node@25.2.3", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-m0jEgYlYz+mDJZ2+F4v8D1AyQb+QzsNqRuI7xg1VQX/KlKS0qT9r1Mo16yo5F/MtifXFgaofIFsdFMox2SxIbQ=="],
 
     "@types/selenium-webdriver": ["@types/selenium-webdriver@4.35.5", "", { "dependencies": { "@types/node": "*", "@types/ws": "*" } }, "sha512-wCQCjWmahRkUAO7S703UAvBFkxz4o/rjX4T2AOSWKXSi0sTQPsrXxR0GjtFUT0ompedLkYH4R5HO5Urz0hyeog=="],
 
@@ -1549,7 +1549,17 @@
 
     "@sinonjs/samsam/type-detect": ["type-detect@4.1.0", "", {}, "sha512-Acylog8/luQ8L7il+geoSxhEkazvkslg7PSNKOX59mbB9cOveP5aq9h74Y7YU8yDpJwetzQQrfIwtf4Wp4LKcw=="],
 
+    "@types/jsdom/@types/node": ["@types/node@24.10.13", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-oH72nZRfDv9lADUBSo104Aq7gPHpQZc4BTx38r9xf9pg5LfP6EzSyH2n7qFmmxRQXh7YlUXODcYsg6PuTDSxGg=="],
+
+    "@types/nightwatch/@types/node": ["@types/node@24.10.13", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-oH72nZRfDv9lADUBSo104Aq7gPHpQZc4BTx38r9xf9pg5LfP6EzSyH2n7qFmmxRQXh7YlUXODcYsg6PuTDSxGg=="],
+
     "@types/nightwatch/devtools-protocol": ["devtools-protocol@0.0.1025565", "", {}, "sha512-0s5sbGQR/EfYQhd8EpZgphpndsv+CufTlaeUyA6vYXCA0H5kMAsHCS/cHtUFWoKJCO125hpoKicQCfpxRj4oqw=="],
+
+    "@types/selenium-webdriver/@types/node": ["@types/node@24.10.13", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-oH72nZRfDv9lADUBSo104Aq7gPHpQZc4BTx38r9xf9pg5LfP6EzSyH2n7qFmmxRQXh7YlUXODcYsg6PuTDSxGg=="],
+
+    "@types/ws/@types/node": ["@types/node@24.10.13", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-oH72nZRfDv9lADUBSo104Aq7gPHpQZc4BTx38r9xf9pg5LfP6EzSyH2n7qFmmxRQXh7YlUXODcYsg6PuTDSxGg=="],
+
+    "@types/yauzl/@types/node": ["@types/node@24.10.13", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-oH72nZRfDv9lADUBSo104Aq7gPHpQZc4BTx38r9xf9pg5LfP6EzSyH2n7qFmmxRQXh7YlUXODcYsg6PuTDSxGg=="],
 
     "@typescript-eslint/eslint-plugin/ignore": ["ignore@7.0.5", "", {}, "sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg=="],
 
