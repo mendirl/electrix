@@ -11,8 +11,6 @@ public class ElectrixApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ElectrixApplication.class, args);
 //        var modules = ApplicationModules.of(Application.class);
-
-
-	}
+    }
 
 }

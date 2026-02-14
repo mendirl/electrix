@@ -6,3 +6,12 @@ services:
       - 'POSTGRES_USER=electrix'
     ports:
       - '5431:5432'
+
+  otel:
+      image: grafana/otel-lgtm:latest
+      hostname: otel
+      container_name: otel
+      restart: always
+      ports:
+          - '3000:3000'
+          - '4318:4318'

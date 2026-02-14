@@ -14,4 +14,11 @@ module electrix {
     requires spring.security.web;
     requires org.jspecify;
     requires spring.messaging;
+    requires java.instrument;
+
+    exports io.mend.electrix;
+    exports io.mend.electrix.config;
+
+    opens io.mend.electrix to spring.core, spring.beans, spring.context;
+
 }

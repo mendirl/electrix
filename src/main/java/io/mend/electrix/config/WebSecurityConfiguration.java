@@ -26,13 +26,13 @@ public class WebSecurityConfiguration {
         return http.securityMatcher(EndpointRequest.toAnyEndpoint())
             .authorizeHttpRequests(authorize -> authorize.anyRequest()
 //                .hasRole("ENDPOINT_ADMIN")
-                .permitAll()
+                    .permitAll()
             ).build();
     }
 
     @Bean
     @Order(1)
-    SecurityFilterChain all(HttpSecurity http) {
+    public SecurityFilterChain all(HttpSecurity http) {
         return http.authorizeHttpRequests(authorize -> authorize.requestMatchers("/**").permitAll()).build();
     }
 
