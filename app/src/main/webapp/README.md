@@ -1,4 +1,4 @@
-# vue-electrix
+# electrix-front
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -47,22 +47,25 @@ bun run build
 bun test:unit
 ```
 
-### Run End-to-End Tests with [Nightwatch](https://nightwatchjs.org/)
+### Run End-to-End Tests with [Playwright](https://playwright.dev)
 
 ```sh
-# When using CI, the project must be built first.
+# Install browsers for the first run
+npx playwright install
+
+# When testing on CI, must build the project first
 bun run build
 
 # Runs the end-to-end tests
 bun test:e2e
-# Runs the tests only on Chrome
-bun test:e2e --env chrome
+# Runs the tests only on Chromium
+bun test:e2e --project=chromium
 # Runs the tests of a specific file
-bun test:e2e tests/e2e/example.ts
+bun test:e2e tests/example.spec.ts
 # Runs the tests in debug mode
 bun test:e2e --debug
 ```
-    
+
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh

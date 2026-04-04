@@ -38,5 +38,5 @@ __screenshots__/
 # Vite
 *.timestamp-*-*.mjs
 
-logs/
-tests_output/
+test-results/
+playwright-report/
