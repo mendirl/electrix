@@ -16,8 +16,9 @@
     <packaging>pom</packaging>
 
     <subprojects>
-        <subproject>app</subproject>
+        <subproject>ingestion</subproject>
         <subproject>mcp</subproject>
+        <subproject>app</subproject>
     </subprojects>
 
     <properties>
