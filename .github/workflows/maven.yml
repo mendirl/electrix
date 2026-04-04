@@ -17,6 +17,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     - name: Checkout Code
       uses: actions/checkout@v6
@@ -30,3 +32,5 @@ jobs:
       run: ./mvnw -B package
     - name: Update dependency graph
       uses: advanced-security/maven-dependency-submission-action@v5
+      with:
+        maven-args: "-DskipTests"
