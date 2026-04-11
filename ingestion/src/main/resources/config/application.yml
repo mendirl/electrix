@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ingestion
+
+ingestion:
+  clickhouse:
+    url: jdbc:clickhouse://localhost:8123/default
+    user: electrix
+    password: electrix
+  data:
+    consommation:
+      brut: classpath:data/consommation-quotidienne-brute.parquet
+      nationale: classpath:data/eco2mix-national-cons-def.parquet
+      regionale: classpath:data/eco2mix-regional-cons-def.parquet

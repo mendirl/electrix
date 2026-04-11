@@ -1,6 +1,11 @@
 server.port: 9090
 
+
+
+
 spring:
+  jmx:
+    enabled: false
   application.name: electrix
   main.banner-mode: off
   threads.virtual.enabled: true
