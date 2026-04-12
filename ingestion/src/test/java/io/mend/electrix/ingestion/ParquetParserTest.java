@@ -1,5 +1,9 @@
 package io.mend.electrix.ingestion;
 
+import io.mend.electrix.ingestion.domain.ConsommationBrute;
+import io.mend.electrix.ingestion.domain.ConsommationNationale;
+import io.mend.electrix.ingestion.domain.ConsommationRegionale;
+import io.mend.electrix.ingestion.infrastructure.ParquetParser;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,7 +25,7 @@ class ParquetParserTest {
     var resource = new ClassPathResource("data/consommation-quotidienne-brute.parquet");
     var records = new ArrayList<ConsommationBrute>();
     parquetParser.parse(resource, ConsommationBrute.class, records::add);
-    assertThat(records).isNotEmpty();
+    assertThat(records).hasSize(100);
   }
 
   @Test
@@ -29,7 +33,7 @@ class ParquetParserTest {
     var resource = new ClassPathResource("data/eco2mix-national-cons-def.parquet");
     var records = new ArrayList<ConsommationNationale>();
     parquetParser.parse(resource, ConsommationNationale.class, records::add);
-    assertThat(records).isNotEmpty();
+    assertThat(records).hasSize(100);
   }
 
   @Test
@@ -37,6 +41,6 @@ class ParquetParserTest {
     var resource = new ClassPathResource("data/eco2mix-regional-cons-def.parquet");
     var records = new ArrayList<ConsommationRegionale>();
     parquetParser.parse(resource, ConsommationRegionale.class, records::add);
-    assertThat(records).isNotEmpty();
+    assertThat(records).hasSize(100);
   }
 }
