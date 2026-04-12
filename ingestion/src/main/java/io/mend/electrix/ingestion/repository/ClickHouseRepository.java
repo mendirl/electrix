@@ -1,4 +1,4 @@
-package io.mend.electrix.ingestion;
+package io.mend.electrix.ingestion.repository;
 
 import java.sql.SQLException;
 import java.util.List;

@@ -1,4 +1,4 @@
-package io.mend.electrix.ingestion;
+package io.mend.electrix.ingestion.domain;
 
 import lombok.Data;
 import org.apache.avro.reflect.AvroName;

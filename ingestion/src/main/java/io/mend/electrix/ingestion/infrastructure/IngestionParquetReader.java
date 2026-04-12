@@ -1,4 +1,4 @@
-package io.mend.electrix.ingestion;
+package io.mend.electrix.ingestion.infrastructure;
 
 import org.apache.avro.reflect.ReflectData;
 import org.apache.hadoop.conf.Configuration;

@@ -1,4 +1,4 @@
-package io.mend.electrix.ingestion;
+package io.mend.electrix.ingestion.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.core.io.Resource;

@@ -1,5 +1,6 @@
-package io.mend.electrix.ingestion;
+package io.mend.electrix.ingestion.infrastructure;
 
+import io.mend.electrix.ingestion.config.IngestionClickhouseProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -21,9 +22,9 @@ public class ClickHouseDatabase {
   }
 
   public <T> void insert(List<T> records,
-                          String tableName,
-                          StatementPreparer<T> preparer,
-                          TableEnsurer ensurer) throws SQLException {
+                         String tableName,
+                         StatementPreparer<T> preparer,
+                         TableEnsurer ensurer) throws SQLException {
     if (records.isEmpty()) {
       return;
     }

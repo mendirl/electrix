@@ -1,5 +1,9 @@
-package io.mend.electrix.ingestion;
+package io.mend.electrix.ingestion.task;
 
+import io.mend.electrix.ingestion.config.IngestionDataProperties;
+import io.mend.electrix.ingestion.domain.ConsommationBrute;
+import io.mend.electrix.ingestion.infrastructure.ParquetParser;
+import io.mend.electrix.ingestion.repository.ClickHouseRepository;
 import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

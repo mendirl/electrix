@@ -1,5 +1,7 @@
-package io.mend.electrix.ingestion;
+package io.mend.electrix.ingestion.repository;
 
+import io.mend.electrix.ingestion.domain.ConsommationRegionale;
+import io.mend.electrix.ingestion.infrastructure.ClickHouseDatabase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
