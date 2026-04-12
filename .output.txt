@@ -1,0 +1,447 @@
+[INFO] Scanning for projects...
+[INFO] Loaded 22534 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO]
+[INFO] -------------------------< io.mend:ingestion >--------------------------
+[INFO] Building ingestion 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots-c1d4c55f9308e5ac18a4069bed41dca64d85c515.txt)
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots.https (prefixes-apache.snapshots.https-0ad9c7bf26e57a9731669cbbf5bacbaa5d688191.txt)
+[INFO] Loaded 22534 auto-discovered prefixes for remote repository central (prefixes-central-78385bf4953147ea51636b5dd6623ed2d38dfacb.txt)
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots-18ca760c2d8beeecc8501d490f690ec8cb2572de.txt)
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache-snapshots (prefixes-apache-snapshots-b6ad1b6b4141cf7b4e128785f79cbc45945d1ec4.txt)
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ ingestion ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO]
+[INFO] --- compiler:3.14.1:compile (default-compile) @ ingestion ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 16 source files with javac [debug parameters release 25] to target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR :
+[INFO] -------------------------------------------------------------
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[29,24] cannot find symbol
+  symbol:   method getPerimetre()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[30,24] cannot find symbol
+  symbol:   method getNature()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[31,24] cannot find symbol
+  symbol:   method getDate()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[32,24] cannot find symbol
+  symbol:   method getHeure()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[33,24] cannot find symbol
+  symbol:   method getDateHeure()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[34,24] cannot find symbol
+  symbol:   method getConsommation()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[35,24] cannot find symbol
+  symbol:   method getPrevisionJ1()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[36,24] cannot find symbol
+  symbol:   method getPrevisionJ()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[37,24] cannot find symbol
+  symbol:   method getFioul()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[38,25] cannot find symbol
+  symbol:   method getCharbon()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[39,25] cannot find symbol
+  symbol:   method getGaz()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[40,25] cannot find symbol
+  symbol:   method getNucleaire()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[41,25] cannot find symbol
+  symbol:   method getEolien()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[42,25] cannot find symbol
+  symbol:   method getSolaire()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[43,25] cannot find symbol
+  symbol:   method getHydraulique()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[44,25] cannot find symbol
+  symbol:   method getPompage()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[45,25] cannot find symbol
+  symbol:   method getBioenergies()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[46,25] cannot find symbol
+  symbol:   method getEchPhysiques()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[47,25] cannot find symbol
+  symbol:   method getTauxCo2()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[48,25] cannot find symbol
+  symbol:   method getEchCommAngleterre()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[49,25] cannot find symbol
+  symbol:   method getEchCommEspagne()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[50,25] cannot find symbol
+  symbol:   method getEchCommItalie()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[51,25] cannot find symbol
+  symbol:   method getEchCommSuisse()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[52,25] cannot find symbol
+  symbol:   method getEchCommAllemagneBelgique()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[53,25] cannot find symbol
+  symbol:   method getFioulTac()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[54,25] cannot find symbol
+  symbol:   method getFioulCogen()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[55,25] cannot find symbol
+  symbol:   method getFioulAutres()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[56,25] cannot find symbol
+  symbol:   method getGazTac()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[57,25] cannot find symbol
+  symbol:   method getGazCogen()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[58,25] cannot find symbol
+  symbol:   method getGazCcg()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[59,25] cannot find symbol
+  symbol:   method getGazAutres()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[60,25] cannot find symbol
+  symbol:   method getHydrauliqueFilEauEclusee()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[61,25] cannot find symbol
+  symbol:   method getHydrauliqueLacs()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[62,25] cannot find symbol
+  symbol:   method getHydrauliqueStepTurbinage()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[63,25] cannot find symbol
+  symbol:   method getBioenergiesDechets()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[64,25] cannot find symbol
+  symbol:   method getBioenergiesBiomasse()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[65,25] cannot find symbol
+  symbol:   method getBioenergiesBiogaz()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[29,24] cannot find symbol
+  symbol:   method getCodeInseeRegion()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[30,24] cannot find symbol
+  symbol:   method getLibelleRegion()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[31,24] cannot find symbol
+  symbol:   method getNature()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[32,24] cannot find symbol
+  symbol:   method getDate()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[33,24] cannot find symbol
+  symbol:   method getHeure()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[34,24] cannot find symbol
+  symbol:   method getDateHeure()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[35,24] cannot find symbol
+  symbol:   method getConsommation()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[36,24] cannot find symbol
+  symbol:   method getThermique()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[37,24] cannot find symbol
+  symbol:   method getNucleaire()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[38,25] cannot find symbol
+  symbol:   method getEolien()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[39,25] cannot find symbol
+  symbol:   method getSolaire()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[40,25] cannot find symbol
+  symbol:   method getHydraulique()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[41,25] cannot find symbol
+  symbol:   method getPompage()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[42,25] cannot find symbol
+  symbol:   method getBioenergies()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[43,25] cannot find symbol
+  symbol:   method getEchPhysiques()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[44,25] cannot find symbol
+  symbol:   method getStockageBatterie()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[45,25] cannot find symbol
+  symbol:   method getDestockageBatterie()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[46,25] cannot find symbol
+  symbol:   method getEolienTerrestre()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[47,25] cannot find symbol
+  symbol:   method getEolienOffshore()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[48,25] cannot find symbol
+  symbol:   method getTcoThermique()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[49,25] cannot find symbol
+  symbol:   method getTchThermique()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[50,25] cannot find symbol
+  symbol:   method getTcoNucleaire()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[51,25] cannot find symbol
+  symbol:   method getTchNucleaire()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[52,25] cannot find symbol
+  symbol:   method getTcoEolien()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[53,25] cannot find symbol
+  symbol:   method getTchEolien()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[54,25] cannot find symbol
+  symbol:   method getTcoSolaire()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[55,25] cannot find symbol
+  symbol:   method getTchSolaire()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[56,25] cannot find symbol
+  symbol:   method getTcoHydraulique()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[57,25] cannot find symbol
+  symbol:   method getTchHydraulique()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[58,25] cannot find symbol
+  symbol:   method getTcoBioenergies()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[59,25] cannot find symbol
+  symbol:   method getTchBioenergies()
+  location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[INFO] 68 errors
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.609 s
+[INFO] Finished at: 2026-04-12T18:33:55+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project ingestion: Compilation failure: Compilation failure:
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[29,24] cannot find symbol
+[ERROR]   symbol:   method getPerimetre()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[30,24] cannot find symbol
+[ERROR]   symbol:   method getNature()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[31,24] cannot find symbol
+[ERROR]   symbol:   method getDate()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[32,24] cannot find symbol
+[ERROR]   symbol:   method getHeure()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[33,24] cannot find symbol
+[ERROR]   symbol:   method getDateHeure()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[34,24] cannot find symbol
+[ERROR]   symbol:   method getConsommation()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[35,24] cannot find symbol
+[ERROR]   symbol:   method getPrevisionJ1()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[36,24] cannot find symbol
+[ERROR]   symbol:   method getPrevisionJ()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[37,24] cannot find symbol
+[ERROR]   symbol:   method getFioul()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[38,25] cannot find symbol
+[ERROR]   symbol:   method getCharbon()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[39,25] cannot find symbol
+[ERROR]   symbol:   method getGaz()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[40,25] cannot find symbol
+[ERROR]   symbol:   method getNucleaire()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[41,25] cannot find symbol
+[ERROR]   symbol:   method getEolien()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[42,25] cannot find symbol
+[ERROR]   symbol:   method getSolaire()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[43,25] cannot find symbol
+[ERROR]   symbol:   method getHydraulique()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[44,25] cannot find symbol
+[ERROR]   symbol:   method getPompage()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[45,25] cannot find symbol
+[ERROR]   symbol:   method getBioenergies()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[46,25] cannot find symbol
+[ERROR]   symbol:   method getEchPhysiques()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[47,25] cannot find symbol
+[ERROR]   symbol:   method getTauxCo2()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[48,25] cannot find symbol
+[ERROR]   symbol:   method getEchCommAngleterre()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[49,25] cannot find symbol
+[ERROR]   symbol:   method getEchCommEspagne()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[50,25] cannot find symbol
+[ERROR]   symbol:   method getEchCommItalie()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[51,25] cannot find symbol
+[ERROR]   symbol:   method getEchCommSuisse()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[52,25] cannot find symbol
+[ERROR]   symbol:   method getEchCommAllemagneBelgique()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[53,25] cannot find symbol
+[ERROR]   symbol:   method getFioulTac()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[54,25] cannot find symbol
+[ERROR]   symbol:   method getFioulCogen()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[55,25] cannot find symbol
+[ERROR]   symbol:   method getFioulAutres()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[56,25] cannot find symbol
+[ERROR]   symbol:   method getGazTac()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[57,25] cannot find symbol
+[ERROR]   symbol:   method getGazCogen()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[58,25] cannot find symbol
+[ERROR]   symbol:   method getGazCcg()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[59,25] cannot find symbol
+[ERROR]   symbol:   method getGazAutres()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[60,25] cannot find symbol
+[ERROR]   symbol:   method getHydrauliqueFilEauEclusee()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[61,25] cannot find symbol
+[ERROR]   symbol:   method getHydrauliqueLacs()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[62,25] cannot find symbol
+[ERROR]   symbol:   method getHydrauliqueStepTurbinage()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[63,25] cannot find symbol
+[ERROR]   symbol:   method getBioenergiesDechets()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[64,25] cannot find symbol
+[ERROR]   symbol:   method getBioenergiesBiomasse()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationNationaleRepository.java:[65,25] cannot find symbol
+[ERROR]   symbol:   method getBioenergiesBiogaz()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationNationale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[29,24] cannot find symbol
+[ERROR]   symbol:   method getCodeInseeRegion()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[30,24] cannot find symbol
+[ERROR]   symbol:   method getLibelleRegion()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[31,24] cannot find symbol
+[ERROR]   symbol:   method getNature()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[32,24] cannot find symbol
+[ERROR]   symbol:   method getDate()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[33,24] cannot find symbol
+[ERROR]   symbol:   method getHeure()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[34,24] cannot find symbol
+[ERROR]   symbol:   method getDateHeure()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[35,24] cannot find symbol
+[ERROR]   symbol:   method getConsommation()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[36,24] cannot find symbol
+[ERROR]   symbol:   method getThermique()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[37,24] cannot find symbol
+[ERROR]   symbol:   method getNucleaire()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[38,25] cannot find symbol
+[ERROR]   symbol:   method getEolien()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[39,25] cannot find symbol
+[ERROR]   symbol:   method getSolaire()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[40,25] cannot find symbol
+[ERROR]   symbol:   method getHydraulique()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[41,25] cannot find symbol
+[ERROR]   symbol:   method getPompage()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[42,25] cannot find symbol
+[ERROR]   symbol:   method getBioenergies()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[43,25] cannot find symbol
+[ERROR]   symbol:   method getEchPhysiques()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[44,25] cannot find symbol
+[ERROR]   symbol:   method getStockageBatterie()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[45,25] cannot find symbol
+[ERROR]   symbol:   method getDestockageBatterie()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[46,25] cannot find symbol
+[ERROR]   symbol:   method getEolienTerrestre()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[47,25] cannot find symbol
+[ERROR]   symbol:   method getEolienOffshore()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[48,25] cannot find symbol
+[ERROR]   symbol:   method getTcoThermique()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[49,25] cannot find symbol
+[ERROR]   symbol:   method getTchThermique()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[50,25] cannot find symbol
+[ERROR]   symbol:   method getTcoNucleaire()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[51,25] cannot find symbol
+[ERROR]   symbol:   method getTchNucleaire()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[52,25] cannot find symbol
+[ERROR]   symbol:   method getTcoEolien()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[53,25] cannot find symbol
+[ERROR]   symbol:   method getTchEolien()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[54,25] cannot find symbol
+[ERROR]   symbol:   method getTcoSolaire()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[55,25] cannot find symbol
+[ERROR]   symbol:   method getTchSolaire()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[56,25] cannot find symbol
+[ERROR]   symbol:   method getTcoHydraulique()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[57,25] cannot find symbol
+[ERROR]   symbol:   method getTchHydraulique()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[58,25] cannot find symbol
+[ERROR]   symbol:   method getTcoBioenergies()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] /home/fabien/dev/code/electrix/ingestion/src/main/java/io/mend/electrix/ingestion/ConsommationRegionaleRepository.java:[59,25] cannot find symbol
+[ERROR]   symbol:   method getTchBioenergies()
+[ERROR]   location: variable r of type io.mend.electrix.ingestion.ConsommationRegionale
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the '-e' switch
+[ERROR] Re-run Maven using the '-X' switch to enable verbose output
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/CompilationFailureException

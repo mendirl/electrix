@@ -59,4 +59,131 @@ public final class ConsommationRegionale {
   @AvroName("column_30")
   private String column30;
 
+  public String getCodeInseeRegion() {
+    return codeInseeRegion;
+  }
+
+  public String getLibelleRegion() {
+    return libelleRegion;
+  }
+
+  public String getNature() {
+    return nature;
+  }
+
+  public String getDate() {
+    return date;
+  }
+
+  public String getHeure() {
+    return heure;
+  }
+
+  public Long getDateHeure() {
+    return dateHeure;
+  }
+
+  public Long getConsommation() {
+    return consommation;
+  }
+
+  public Long getThermique() {
+    return thermique;
+  }
+
+  public Long getNucleaire() {
+    return nucleaire;
+  }
+
+  public String getEolien() {
+    return eolien;
+  }
+
+  public Long getSolaire() {
+    return solaire;
+  }
+
+  public Long getHydraulique() {
+    return hydraulique;
+  }
+
+  public Long getPompage() {
+    return pompage;
+  }
+
+  public Long getBioenergies() {
+    return bioenergies;
+  }
+
+  public Long getEchPhysiques() {
+    return echPhysiques;
+  }
+
+  public Long getStockageBatterie() {
+    return stockageBatterie;
+  }
+
+  public Long getDestockageBatterie() {
+    return destockageBatterie;
+  }
+
+  public Long getEolienTerrestre() {
+    return eolienTerrestre;
+  }
+
+  public Long getEolienOffshore() {
+    return eolienOffshore;
+  }
+
+  public Double getTcoThermique() {
+    return tcoThermique;
+  }
+
+  public Double getTchThermique() {
+    return tchThermique;
+  }
+
+  public Double getTcoNucleaire() {
+    return tcoNucleaire;
+  }
+
+  public Double getTchNucleaire() {
+    return tchNucleaire;
+  }
+
+  public Double getTcoEolien() {
+    return tcoEolien;
+  }
+
+  public Double getTchEolien() {
+    return tchEolien;
+  }
+
+  public Double getTcoSolaire() {
+    return tcoSolaire;
+  }
+
+  public Double getTchSolaire() {
+    return tchSolaire;
+  }
+
+  public Double getTcoHydraulique() {
+    return tcoHydraulique;
+  }
+
+  public Double getTchHydraulique() {
+    return tchHydraulique;
+  }
+
+  public Double getTcoBioenergies() {
+    return tcoBioenergies;
+  }
+
+  public Double getTchBioenergies() {
+    return tchBioenergies;
+  }
+
+  public String getColumn30() {
+    return column30;
+  }
 }
