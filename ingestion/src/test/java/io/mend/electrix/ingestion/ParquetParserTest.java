@@ -14,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class ParquetParserTest {
 
-  private ParquetParser parquetParser = new ParquetParser();
+  private final ParquetParser parquetParser = new ParquetParser();
 
   @Test
   void testParse() throws IOException {

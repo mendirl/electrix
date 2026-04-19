@@ -144,8 +144,8 @@ docker run --rm -it -v "$(pwd):/workspace" -w /workspace duckdb/duckdb
 
 ```sql
 COPY
-((SELECT * FROM 'eco2mix-regional-cons-def.parquet' WHERE date = '2026-01-31' LIMIT 10)
+((SELECT * FROM 'consommation-quotidienne-brute.parquet' WHERE date = '31/01/2026' LIMIT 10)
  UNION ALL
- (SELECT * FROM 'eco2mix-regional-cons-def.parquet' WHERE date = '2013-01-01' LIMIT 10))
+ (SELECT * FROM 'consommation-quotidienne-brute.parquet' WHERE date = '01/01/2013' LIMIT 10))
 TO 'simple.parquet';
 ```
