@@ -1,18 +1,18 @@
 services:
-#    postgres:
-#        image: 'postgres:latest'
-#        environment:
-#            POSTGRES_PASSWORD: electrix
-#            POSTGRES_USER: electrix
-#        ports:
-#            - "5431:5432"
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      POSTGRES_PASSWORD: electrix
+      POSTGRES_USER: electrix
+    ports:
+      - "5431:5432"
 
-  #    duckdb:
-  #        image: datacatering/duckdb:v1.2.1
-  #        container_name: duckdb
-  #        working_dir: /data
-  #        volumes:
-  #            - ./data:/data
+  duckdb:
+    image: datacatering/duckdb:v1.2.1
+    container_name: duckdb
+    working_dir: /data
+    volumes:
+      - ./data:/data
 
   clickhouse:
         image: clickhouse

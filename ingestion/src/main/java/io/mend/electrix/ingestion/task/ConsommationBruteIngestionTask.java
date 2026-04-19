@@ -3,7 +3,9 @@ package io.mend.electrix.ingestion.task;
 import io.mend.electrix.ingestion.config.IngestionDataProperties;
 import io.mend.electrix.ingestion.domain.ConsommationBrute;
 import io.mend.electrix.ingestion.infrastructure.ParquetParser;
+import io.mend.electrix.ingestion.jooq.tables.records.FileIngestionRecord;
 import io.mend.electrix.ingestion.repository.ClickHouseRepository;
+import io.mend.electrix.ingestion.repository.FileIngestionRepository;
 import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,13 +22,16 @@ public class ConsommationBruteIngestionTask implements CommandLineRunner {
   private final IngestionDataProperties ingestionDataProperties;
   private final ParquetParser parquetParser;
   private final ClickHouseRepository<ConsommationBrute> bruteRepository;
+  private final FileIngestionRepository fileIngestionRepository;
 
   public ConsommationBruteIngestionTask(IngestionDataProperties ingestionDataProperties,
                                         ParquetParser parquetParser,
-                                        ClickHouseRepository<ConsommationBrute> bruteRepository) {
+                                        ClickHouseRepository<ConsommationBrute> bruteRepository,
+                                        FileIngestionRepository fileIngestionRepository) {
     this.ingestionDataProperties = ingestionDataProperties;
     this.parquetParser = parquetParser;
     this.bruteRepository = bruteRepository;
+    this.fileIngestionRepository = fileIngestionRepository;
   }
 
   @Override
@@ -35,10 +40,22 @@ public class ConsommationBruteIngestionTask implements CommandLineRunner {
 
     if (data != null && data.brut() != null) {
       var resource = data.brut();
-      log.info("Starting ingestion for consommation brute from {}", resource.getFilename());
+      var filename = resource.getFilename();
+      if (fileIngestionRepository.alreadyProcessed(filename)) {
+        log.info("Fichier {} déjà ingéré, on passe", filename);
+        return;
+      }
+      log.info("Starting ingestion for consommation brute from {}", filename);
       List<ConsommationBrute> records = new ArrayList<>();
       parquetParser.parse(resource, ConsommationBrute.class, records::add);
       bruteRepository.insert(records);
+      var record = new FileIngestionRecord();
+      record.setFilename(filename);
+      record.setType("consommation_brute");
+      record.setRowCount(records.size());
+      record.setStatus("SUCCESS");
+      fileIngestionRepository.save(record);
+      log.info("Fichier {} enregistré dans le suivi", filename);
     }
   }
 }
