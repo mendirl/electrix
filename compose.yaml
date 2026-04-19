@@ -7,7 +7,14 @@ services:
 #        ports:
 #            - "5431:5432"
 
-    clickhouse:
+  #    duckdb:
+  #        image: datacatering/duckdb:v1.2.1
+  #        container_name: duckdb
+  #        working_dir: /data
+  #        volumes:
+  #            - ./data:/data
+
+  clickhouse:
         image: clickhouse
         hostname: clickhouse
         container_name: clickhouse

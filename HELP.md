@@ -131,3 +131,21 @@ https://nuxt.com/docs/getting-started/installation
 cd src/main && ../../target/bin/bun/bun create nuxt nuxt-electrix
 cd nuxt-electrix && ../../../target/bin/bun/bun install
 ```
+
+## reduire la taille d'un fichier parquet
+
+#### avec duckdb
+
+dans un répertoire contenant un fichier parquet
+
+```dockerfile
+docker run --rm -it -v "$(pwd):/workspace" -w /workspace duckdb/duckdb
+```
+
+```sql
+COPY
+((SELECT * FROM 'eco2mix-regional-cons-def.parquet' WHERE date = '2026-01-31' LIMIT 10)
+ UNION ALL
+ (SELECT * FROM 'eco2mix-regional-cons-def.parquet' WHERE date = '2013-01-01' LIMIT 10))
+TO 'simple.parquet';
+```
