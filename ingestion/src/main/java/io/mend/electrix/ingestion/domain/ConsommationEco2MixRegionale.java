@@ -4,7 +4,7 @@ import lombok.Data;
 import org.apache.avro.reflect.AvroName;
 
 @Data
-public final class ConsommationRegionale {
+public final class ConsommationEco2MixRegionale {
   @AvroName("code_insee_region")
   private String codeInseeRegion;
   @AvroName("libelle_region")

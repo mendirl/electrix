@@ -1,6 +1,6 @@
 package io.mend.electrix.ingestion.repository;
 
-import io.mend.electrix.ingestion.domain.ConsommationRegionale;
+import io.mend.electrix.ingestion.domain.ConsommationEco2MixRegionale;
 import io.mend.electrix.ingestion.infrastructure.ClickHouseDatabase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,22 +12,22 @@ import java.sql.SQLException;
 import java.util.List;
 
 @Repository
-public class ConsommationRegionaleRepository implements ClickHouseRepository<ConsommationRegionale> {
-  private static final Logger log = LoggerFactory.getLogger(ConsommationRegionaleRepository.class);
+public class ConsommationEco2MixRegionaleRepository implements ClickHouseRepository<ConsommationEco2MixRegionale> {
+  private static final Logger log = LoggerFactory.getLogger(ConsommationEco2MixRegionaleRepository.class);
   private final ClickHouseDatabase database;
 
-  public ConsommationRegionaleRepository(ClickHouseDatabase database) {
+  public ConsommationEco2MixRegionaleRepository(ClickHouseDatabase database) {
     this.database = database;
   }
 
   @Override
-  public void insert(List<ConsommationRegionale> records) throws SQLException {
-    database.insert(records, "consommation_regionale", preparer, this::ensureTableExists);
+  public void insert(List<ConsommationEco2MixRegionale> records) throws SQLException {
+    database.insert(records, "consommation_eco2mix_regionale", preparer, this::ensureTableExists);
   }
 
-  private final ClickHouseDatabase.StatementPreparer<ConsommationRegionale> preparer = new ClickHouseDatabase.StatementPreparer<>() {
+  private final ClickHouseDatabase.StatementPreparer<ConsommationEco2MixRegionale> preparer = new ClickHouseDatabase.StatementPreparer<>() {
     @Override
-    public void prepare(PreparedStatement ps, ConsommationRegionale r) throws SQLException {
+    public void prepare(PreparedStatement ps, ConsommationEco2MixRegionale r) throws SQLException {
       ps.setString(1, r.getCodeInseeRegion());
       ps.setString(2, r.getLibelleRegion());
       ps.setString(3, r.getNature());
@@ -65,7 +65,7 @@ public class ConsommationRegionaleRepository implements ClickHouseRepository<Con
     @Override
     public String getInsertSql() {
       return """
-        INSERT INTO consommation_regionale (
+        INSERT INTO consommation_eco2mix_regionale (
           code_insee_region, libelle_region, nature, date, heure, date_heure, consommation,
           thermique, nucleaire, eolien, solaire, hydraulique, pompage, bioenergies,
           ech_physiques, stockage_batterie, destockage_batterie, eolien_terrestre,
@@ -79,7 +79,7 @@ public class ConsommationRegionaleRepository implements ClickHouseRepository<Con
 
   private void ensureTableExists(Connection conn) throws SQLException {
     String sql = """
-      CREATE TABLE IF NOT EXISTS consommation_regionale (
+      CREATE TABLE IF NOT EXISTS consommation_eco2mix_regionale (
         code_insee_region String, libelle_region String, nature String, date String,
         heure String, date_heure DateTime64(3), consommation Nullable(Int64),
         thermique Nullable(Int64), nucleaire Nullable(Int64), eolien Nullable(String),
@@ -97,6 +97,6 @@ public class ConsommationRegionaleRepository implements ClickHouseRepository<Con
       ) ENGINE = MergeTree() ORDER BY (date_heure)
       """;
     conn.createStatement().execute(sql);
-    log.info("Table 'consommation_regionale' ready");
+    log.info("Table 'consommation_eco2mix_regionale' ready");
   }
 }

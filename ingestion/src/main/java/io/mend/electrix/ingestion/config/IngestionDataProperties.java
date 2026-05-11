@@ -6,7 +6,8 @@ import org.springframework.core.io.Resource;
 @ConfigurationProperties(prefix = "ingestion.data")
 public record IngestionDataProperties(DataProperties consommation) {
 
-  public record DataProperties(Resource brut, Resource nationale, Resource regionale) {
+  public record DataProperties(Resource brut_national, Resource brut_regional, Resource eco2mix_nationale,
+                               Resource eco2mix_regionale) {
   }
 
 }

@@ -1,6 +1,6 @@
 package io.mend.electrix.ingestion.repository;
 
-import io.mend.electrix.ingestion.domain.ConsommationNationale;
+import io.mend.electrix.ingestion.domain.ConsommationEco2MixNationale;
 import io.mend.electrix.ingestion.infrastructure.ClickHouseDatabase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,22 +12,22 @@ import java.sql.SQLException;
 import java.util.List;
 
 @Repository
-public class ConsommationNationaleRepository implements ClickHouseRepository<ConsommationNationale> {
-  private static final Logger log = LoggerFactory.getLogger(ConsommationNationaleRepository.class);
+public class ConsommationEco2MixNationaleRepository implements ClickHouseRepository<ConsommationEco2MixNationale> {
+  private static final Logger log = LoggerFactory.getLogger(ConsommationEco2MixNationaleRepository.class);
   private final ClickHouseDatabase database;
 
-  public ConsommationNationaleRepository(ClickHouseDatabase database) {
+  public ConsommationEco2MixNationaleRepository(ClickHouseDatabase database) {
     this.database = database;
   }
 
   @Override
-  public void insert(List<ConsommationNationale> records) throws SQLException {
-    database.insert(records, "consommation_nationale", preparer, this::ensureTableExists);
+  public void insert(List<ConsommationEco2MixNationale> records) throws SQLException {
+    database.insert(records, "consommation_eco2mix_nationale", preparer, this::ensureTableExists);
   }
 
-  private final ClickHouseDatabase.StatementPreparer<ConsommationNationale> preparer = new ClickHouseDatabase.StatementPreparer<>() {
+  private final ClickHouseDatabase.StatementPreparer<ConsommationEco2MixNationale> preparer = new ClickHouseDatabase.StatementPreparer<>() {
     @Override
-    public void prepare(PreparedStatement ps, ConsommationNationale r) throws SQLException {
+    public void prepare(PreparedStatement ps, ConsommationEco2MixNationale r) throws SQLException {
       ps.setString(1, r.getPerimetre());
       ps.setString(2, r.getNature());
       ps.setString(3, r.getDate());
@@ -70,7 +70,7 @@ public class ConsommationNationaleRepository implements ClickHouseRepository<Con
     @Override
     public String getInsertSql() {
       return """
-        INSERT INTO consommation_nationale (
+        INSERT INTO consommation_eco2mix_nationale (
           perimetre, nature, date, heure, date_heure, consommation, prevision_j1, prevision_j,
           fioul, charbon, gaz, nucleaire, eolien, solaire, hydraulique, pompage, bioenergies,
           ech_physiques, taux_co2, ech_comm_angleterre, ech_comm_espagne, ech_comm_italie,
@@ -85,7 +85,7 @@ public class ConsommationNationaleRepository implements ClickHouseRepository<Con
 
   private void ensureTableExists(Connection conn) throws SQLException {
     String sql = """
-      CREATE TABLE IF NOT EXISTS consommation_nationale (
+      CREATE TABLE IF NOT EXISTS consommation_eco2mix_nationale (
         perimetre String, nature String, date String, heure String, date_heure DateTime64(3),
         consommation Nullable(Int64), prevision_j1 Nullable(Int64), prevision_j Nullable(Int64),
         fioul Nullable(Int64), charbon Nullable(Int64), gaz Nullable(Int64), nucleaire Nullable(Int64),
@@ -102,6 +102,6 @@ public class ConsommationNationaleRepository implements ClickHouseRepository<Con
       ) ENGINE = MergeTree() ORDER BY (date_heure)
       """;
     conn.createStatement().execute(sql);
-    log.info("Table 'consommation_nationale' ready");
+    log.info("Table 'consommation_eco2mix_nationale' ready");
   }
 }

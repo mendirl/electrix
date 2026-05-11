@@ -1,7 +1,7 @@
 package io.mend.electrix.ingestion.task;
 
 import io.mend.electrix.ingestion.config.IngestionDataProperties;
-import io.mend.electrix.ingestion.domain.ConsommationBrute;
+import io.mend.electrix.ingestion.domain.ConsommationBruteNationale;
 import io.mend.electrix.ingestion.infrastructure.ParquetParser;
 import io.mend.electrix.ingestion.jooq.tables.records.FileIngestionRecord;
 import io.mend.electrix.ingestion.repository.ClickHouseRepository;
@@ -16,18 +16,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class ConsommationBruteIngestionTask implements CommandLineRunner {
-  private static final Logger log = LoggerFactory.getLogger(ConsommationBruteIngestionTask.class);
+public class ConsommationBruteNationaleIngestionTask implements CommandLineRunner {
+  private static final Logger log = LoggerFactory.getLogger(ConsommationBruteNationaleIngestionTask.class);
 
   private final IngestionDataProperties ingestionDataProperties;
   private final ParquetParser parquetParser;
-  private final ClickHouseRepository<ConsommationBrute> bruteRepository;
+  private final ClickHouseRepository<ConsommationBruteNationale> bruteRepository;
   private final FileIngestionRepository fileIngestionRepository;
 
-  public ConsommationBruteIngestionTask(IngestionDataProperties ingestionDataProperties,
-                                        ParquetParser parquetParser,
-                                        ClickHouseRepository<ConsommationBrute> bruteRepository,
-                                        FileIngestionRepository fileIngestionRepository) {
+  public ConsommationBruteNationaleIngestionTask(IngestionDataProperties ingestionDataProperties,
+                                                 ParquetParser parquetParser,
+                                                 ClickHouseRepository<ConsommationBruteNationale> bruteRepository,
+                                                 FileIngestionRepository fileIngestionRepository) {
     this.ingestionDataProperties = ingestionDataProperties;
     this.parquetParser = parquetParser;
     this.bruteRepository = bruteRepository;
@@ -38,20 +38,20 @@ public class ConsommationBruteIngestionTask implements CommandLineRunner {
   public void run(String @NonNull ... args) throws Exception {
     var data = ingestionDataProperties.consommation();
 
-    if (data != null && data.brut() != null) {
-      var resource = data.brut();
+    if (data != null && data.brut_national() != null) {
+      var resource = data.brut_national();
       var filename = resource.getFilename();
       if (fileIngestionRepository.alreadyProcessed(filename)) {
         log.info("Fichier {} déjà ingéré, on passe", filename);
         return;
       }
-      log.info("Starting ingestion for consommation brute from {}", filename);
-      List<ConsommationBrute> records = new ArrayList<>();
-      parquetParser.parse(resource, ConsommationBrute.class, records::add);
+      log.info("Starting ingestion for consommation brute nationale from {}", filename);
+      List<ConsommationBruteNationale> records = new ArrayList<>();
+      parquetParser.parse(resource, ConsommationBruteNationale.class, records::add);
       bruteRepository.insert(records);
       var record = new FileIngestionRecord();
       record.setFilename(filename);
-      record.setType("consommation_brute");
+      record.setType("consommation_brute_nationale");
       record.setRowCount(records.size());
       record.setStatus("SUCCESS");
       fileIngestionRepository.save(record);

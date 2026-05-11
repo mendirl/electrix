@@ -4,7 +4,7 @@ import lombok.Data;
 import org.apache.avro.reflect.AvroName;
 
 @Data
-public final class ConsommationNationale {
+public final class ConsommationEco2MixNationale {
   private String perimetre;
   private String nature;
   private String date;

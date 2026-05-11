@@ -4,7 +4,7 @@ import lombok.Data;
 import org.apache.avro.reflect.AvroName;
 
 @Data
-public final class ConsommationBrute {
+public final class ConsommationBruteNationale {
   @AvroName("date_heure")
   private Long dateHeure;
   private String date;
