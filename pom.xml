@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>4.0.5</version>
+    <version>4.0.6</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
 
@@ -26,7 +26,7 @@
     <bun-version>v1.3.11</bun-version>
     <spring-modulith.version>2.0.5</spring-modulith.version>
     <spring-cloud.version>2025.1.1</spring-cloud.version>
-    <spring-ai.version>2.0.0-M5</spring-ai.version>
+    <spring-ai.version>2.0.0-M6</spring-ai.version>
 
     <jooq.version>3.20.10</jooq.version>
   </properties>

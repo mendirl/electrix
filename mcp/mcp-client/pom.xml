@@ -9,4 +9,11 @@
 
   <artifactId>mcp-client</artifactId>
 
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.ai</groupId>
+      <artifactId>spring-ai-starter-mcp-client</artifactId>
+    </dependency>
+  </dependencies>
+
 </project>
