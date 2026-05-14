@@ -25,12 +25,13 @@ public class FileIngestionRepository {
   }
 
   public boolean alreadyProcessed(String filename) {
-    return dsl.fetchExists(
-      dsl.selectOne()
-        .from(FILE_INGESTION)
-        .where(FILE_INGESTION.FILENAME.eq(filename))
-        .and(FILE_INGESTION.STATUS.eq("SUCCESS"))
-    );
+    return false;
+//    return dsl.fetchExists(
+//      dsl.selectOne()
+//        .from(FILE_INGESTION)
+//        .where(FILE_INGESTION.FILENAME.eq(filename))
+//        .and(FILE_INGESTION.STATUS.eq("SUCCESS"))
+//    );
   }
 
 }

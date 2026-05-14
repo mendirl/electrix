@@ -3,6 +3,7 @@ package io.mend.electrix.ingestion.task;
 import io.mend.electrix.ingestion.config.IngestionDataProperties;
 import io.mend.electrix.ingestion.domain.ConsommationEco2MixRegionale;
 import io.mend.electrix.ingestion.infrastructure.ParquetParser;
+import io.mend.electrix.ingestion.infrastructure.ResourceDownloader;
 import io.mend.electrix.ingestion.jooq.tables.records.FileIngestionRecord;
 import io.mend.electrix.ingestion.repository.ClickHouseRepository;
 import io.mend.electrix.ingestion.repository.FileIngestionRepository;
@@ -10,6 +11,7 @@ import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -21,20 +23,24 @@ public class ConsommationEco2MixRegionaleIngestionTask implements CommandLineRun
 
   private final IngestionDataProperties ingestionDataProperties;
   private final ParquetParser parquetParser;
+  private final ResourceDownloader resourceDownloader;
   private final ClickHouseRepository<ConsommationEco2MixRegionale> regionaleRepository;
   private final FileIngestionRepository fileIngestionRepository;
 
   public ConsommationEco2MixRegionaleIngestionTask(IngestionDataProperties ingestionDataProperties,
                                                    ParquetParser parquetParser,
+                                                   ResourceDownloader resourceDownloader,
                                                    ClickHouseRepository<ConsommationEco2MixRegionale> regionaleRepository,
                                                    FileIngestionRepository fileIngestionRepository) {
     this.ingestionDataProperties = ingestionDataProperties;
     this.parquetParser = parquetParser;
+    this.resourceDownloader = resourceDownloader;
     this.regionaleRepository = regionaleRepository;
     this.fileIngestionRepository = fileIngestionRepository;
   }
 
   @Override
+  @Async
   public void run(String @NonNull ... args) throws Exception {
     var data = ingestionDataProperties.consommation();
 
@@ -46,8 +52,9 @@ public class ConsommationEco2MixRegionaleIngestionTask implements CommandLineRun
         return;
       }
       log.info("Starting ingestion for eco2mix regionale from {}", nomFichier);
+      var file = resourceDownloader.download(resource);
       List<ConsommationEco2MixRegionale> records = new ArrayList<>();
-      parquetParser.parse(resource, ConsommationEco2MixRegionale.class, records::add);
+      parquetParser.parse(file, ConsommationEco2MixRegionale.class, records::add);
       regionaleRepository.insert(records);
       var record = new FileIngestionRecord();
       record.setFilename(nomFichier);
