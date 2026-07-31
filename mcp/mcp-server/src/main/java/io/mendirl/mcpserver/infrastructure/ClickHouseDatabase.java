@@ -5,6 +5,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -19,6 +25,21 @@ public class ClickHouseDatabase {
 
 
   public List<String> listTables(String databaseName) {
-    return null;
+    List<String> tables = new ArrayList<>();
+    String query = "SHOW TABLES FROM " + databaseName;
+
+    try (Connection conn = DriverManager.getConnection(properties.url(), properties.user(), properties.password());
+         Statement stmt = conn.createStatement();
+         ResultSet rs = stmt.executeQuery(query)) {
+
+      while (rs.next()) {
+        tables.add(rs.getString(1));
+      }
+
+    } catch (SQLException e) {
+      log.error("Error listing tables for database {}", databaseName, e);
+    }
+
+    return tables;
   }
 }
