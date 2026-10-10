@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>4.0.6</version>
+    <version>4.1.1</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
 
@@ -29,6 +29,8 @@
     <spring-ai.version>2.0.0-M6</spring-ai.version>
 
     <jooq.version>3.20.10</jooq.version>
+
+    <lombok.version>1.18.48</lombok.version>
   </properties>
 
   <dependencyManagement>
