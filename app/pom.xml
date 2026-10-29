@@ -186,7 +186,7 @@
               <goal>install-bun</goal>
             </goals>
             <configuration>
-              <bunVersion>${bun-version}</bunVersion>
+              <bunVersion>${bun.version}</bunVersion>
             </configuration>
           </execution>
           <execution>

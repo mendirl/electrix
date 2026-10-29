@@ -23,14 +23,11 @@
 
   <properties>
     <java.version>27</java.version>
-    <bun-version>v1.3.11</bun-version>
+    <bun.version>v1.4.4</bun.version>
+
     <spring-modulith.version>2.0.5</spring-modulith.version>
     <spring-cloud.version>2025.1.1</spring-cloud.version>
     <spring-ai.version>2.0.2</spring-ai.version>
-
-    <jooq.version>3.20.10</jooq.version>
-
-    <lombok.version>1.18.48</lombok.version>
   </properties>
 
   <dependencyManagement>
