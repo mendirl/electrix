@@ -27,7 +27,7 @@
 
     <spring-modulith.version>2.1.2</spring-modulith.version>
     <spring-cloud.version>2025.1.4</spring-cloud.version>
-    <spring-ai.version>2.0.2</spring-ai.version>
+    <spring-ai.version>2.1.0</spring-ai.version>
   </properties>
 
   <dependencyManagement>
